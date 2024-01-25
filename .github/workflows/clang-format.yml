@@ -2,11 +2,9 @@ name: clang-format Code Formatter
 on: push
 jobs:
   lint:
-    name: clang-format Code Formatter
     runs-on: ubuntu-latest
-    options: --user 1001
     steps:
     - name: Clang Code Formatter
-      uses: ivanludvig/clang-format-action@v1.4
+      uses: egor-tensin/clang-format@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
