@@ -4,6 +4,7 @@ jobs:
   lint:
     name: clang-format Code Formatter
     runs-on: ubuntu-latest
+    options: --user 1001
     steps:
     - name: Clang Code Formatter
       uses: ivanludvig/clang-format-action@v1.4
