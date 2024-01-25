@@ -7,8 +7,8 @@ jobs:
       - uses: actions/checkout@v2
       - uses: RafikFarhad/clang-format-github-action@v3
         with:
-          sources: "eloc610LowPowerPartition/src/*, 
-                    eloc610LowPowerPartition/lib/*,
-                    eloc610LowPowerPartition/test/*"
+          sources: "eloc610LowPowerPartition/**/*.cpp, 
+                    eloc610LowPowerPartition/**/*.h,
+                    eloc610LowPowerPartition/**/*.hpp"
           excludes: "eloc610LowPowerPartition/lib/edge-impulse/src/edge-impulse-sdk/*"
           style: "LLVM"
