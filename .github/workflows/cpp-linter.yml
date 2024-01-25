@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: RafikFarhad/clang-format-github-action@v3.2
+      - uses: RafikFarhad/clang-format-github-action@v4
         with:
           sources: "eloc610LowPowerPartition/**/*.cpp, 
                     eloc610LowPowerPartition/**/*.h,
