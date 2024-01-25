@@ -1,0 +1,14 @@
+name: Clang Format Checker
+on: [push]
+jobs:
+  clang-format-checking:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: RafikFarhad/clang-format-github-action@v3
+        with:
+          sources: "eloc610LowPowerPartition/src/*, 
+                    eloc610LowPowerPartition/lib/*,
+                    eloc610LowPowerPartition/test/*"
+          excludes: "eloc610LowPowerPartition/lib/edge-impulse/src/edge-impulse-sdk/*"
+          style: "LLVM"
